@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/form"
+    android:layout_marginTop="30dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:weightSum="100"
+    >
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15"
+        app:counterEnabled="true"
+        app:counterMaxLength="10"
+        app:endIconMode="clear_text"
+        android:padding="4dp"
+        android:layout_margin="2dp"
+        app:helperTextEnabled="true"
+        app:helperText="Required"
+        android:hint="@string/name"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/name_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/user_name"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15"
+        android:padding="4dp"
+        android:hint="@string/user_name"
+        android:layout_margin="5dp"
+        android:inputType="text"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/user_name_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/email"
+        android:padding="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15"
+        android:layout_margin="2dp"
+        app:suffixText="@string/end_mail"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/email_id">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15"
+        android:padding="4dp"
+        android:hint="@string/password"
+        app:endIconMode="password_toggle"
+        android:layout_margin="2dp"
+        app:helperTextEnabled="true"
+        app:helperText="@string/email_id"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textWebPassword">
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/confirm_password"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15"
+        android:padding="4dp"
+        android:hint="@string/confirm_password"
+        android:layout_margin="2dp"
+        app:endIconMode="password_toggle"
+        app:helperTextEnabled="true"
+        app:helperText="@string/pass_helper"
+        android:contentDescription="@string/mydescription"
+      >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/confirm_password_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textWebPassword">
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/register"
+        android:layout_marginTop="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:layout_gravity="center"
+        android:background="@color/colorAccent"
+        android:text="@string/register"
+        android:textAllCaps="false"
+        android:textColor="#4E342E">
+
+    </Button>
+</LinearLayout>

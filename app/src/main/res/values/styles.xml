@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MyMaterialTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="actionBarItemBackground">@color/colorPrimary</item>
+        <item name="actionBarTheme">@style/Theme.AppCompat.DayNight.DarkActionBar</item>
+        <item name="android:shadowColor">@color/black</item>
+        <item name="android:title">App</item>
+        <item name="paddingStart">4dp</item>
+        <item name="tooltipForegroundColor">@color/colorAccent</item>
+        <item name="rippleColor">@color/colorAccent</item>
+    </style>
+</resources>
